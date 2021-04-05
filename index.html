@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image resize</title>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <header class="main-header">
+        <h1>Client Image Resizer</h1>
+      </header>
+      <main class="main">
+        <!-- <header class="title">
+          <h2>Upload your image and let us handle the resizing.</h2>
+        </header> -->
+        <section class="upload" id="upload">
+          <form id="file-form">
+            <h3>Upload your image</h3>
+            <input type="file" multiple="false" id="upload-input" />
+          </form>
+        </section>
+        <section class="quality">
+          <h3>Select the desired quality:</h3>
+          <div class="buttons">
+            <button class="active" id="low">Low</button>
+            <button id="medium">Medium</button>
+            <button id="high">High</button>
+          </div>
+        </section>
+        <section class="resolution">
+          <h3>Select the resolution</h3>
+          <div><input type="number" id="new-width" />px</div>
+          <div><input type="number" id="new-height" />px</div>
+        </section>
+        <button class="done" id="done">Resize</button>
+        <!-- <img src="" alt="" id="holder" /> -->
+      </main>
+    </div>
+  </body>
+</html>
